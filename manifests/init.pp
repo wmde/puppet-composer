@@ -1,10 +1,5 @@
 class composer() {
 
-  package { [
-      'php5-cli',
-    ]: ensure => present,
-  }
-
   file {
     "/usr/local/bin/composer":
       ensure => present,
